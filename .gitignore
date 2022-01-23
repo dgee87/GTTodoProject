@@ -1,0 +1,5 @@
+.idea
+*.iml
+.coverage
+test_reports/cov
+test_reports/*.xml
