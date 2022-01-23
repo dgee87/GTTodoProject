@@ -1,0 +1,2 @@
+ENCODING=utf-8
+WHITE_LIST_DIRS=.git,.idea,test_reports,__pycache__

@@ -38,9 +38,12 @@ class SimpleFindStrategy(SearchStrategy):
         self._encoding = os.getenv(EnvConfig.ENCODING, Constants.UTF8)
 
     def find_word(self, word: str, file_name: str) -> bool:
-        with open(file_name, 'r', encoding=self._encoding) as f:
-            found = f.read().find(word)
-        return False if found < 0 else True
+        try:
+            with open(file_name, 'r', encoding=self._encoding) as f:
+                found = f.read().find(word)
+            return False if found < 0 else True
+        except UnicodeDecodeError:  # pragma: no cover
+            print(f"File [{file_name}] is not {self._encoding} supported.")
 
 
 class BufferFindStrategy(SearchStrategy):
@@ -147,3 +150,4 @@ if __name__ == "__main__":  # pragma: no cover
     print(f"List of TODO files: {len(todo_files)}")
     for file_name in todo_files:
         print(file_name)
+    print("*" * 40)
