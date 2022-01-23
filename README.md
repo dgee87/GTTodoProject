@@ -42,18 +42,17 @@ Successful run with python `main.py` will output list of files as below:
 
 ```text
 ****************************************
-List of TODO files: 9
+List of TODO files: 6
+<path_to_your_dir>/GTTodoProject/main.py
 <path_to_your_dir>/GTTodoProject/README.md
-<path_to_your_dir>/GTTodoProject/tests/test_search.py
-<path_to_your_dir>/GTTodoProject/tests/test_resources/test_ignore_dir/test_ignore_file.js
-<path_to_your_dir>/GTTodoProject/tests/test_resources/test_dir_2/test_sub_dir_2/test_file_2_2.js
-<path_to_your_dir>/GTTodoProject/tests/test_resources/test_dir_1/test_file.js
 <path_to_your_dir>/GTTodoProject/somedir3/another_file.js
 <path_to_your_dir>/GTTodoProject/somedir2/anotherdir/index.js
 <path_to_your_dir>/GTTodoProject/somedir2/anotherdir/yetanotherdir/index.js
 <path_to_your_dir>/GTTodoProject/somedir/somemodule/someotherfile.js
 ****************************************
 ```
+
+Take note, your output might differ from the above if you have provided your own configurations.
 
 ## Output results example with Dockerfile
 
