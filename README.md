@@ -123,7 +123,7 @@ OK
 
 ## Configurations
 
-The following configurations can be set in the file `docker_env`:
+The following configurations can be set in the file `dockerenv` file in the project directory:
 
 | Name | Default Value | Description |
 |---------------|---------------|---------------|
