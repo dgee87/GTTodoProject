@@ -2,6 +2,9 @@
 
 The following `python` program searches for list of files in directories and sub-directories that contains `"TODO"`.
 
+The application uses the design pattern [Strategy](https://refactoring.guru/design-patterns/strategy) to highlight 
+that there could be multiple ways to search for a certain text in a text file of arbitary size.
+
 ## Pre-requisites
 
 * Docker
